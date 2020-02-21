@@ -3,6 +3,3 @@
 !/logs/README.md
 composer.lock
 .idea
-
-apps/config/database.php
-/apps/config/database.php
