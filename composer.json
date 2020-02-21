@@ -1,0 +1,55 @@
+{
+  "name": "slim/slim-skeleton",
+  "description": "A Slim Framework skeleton application for rapid development",
+  "keywords": [
+    "microframework",
+    "rest",
+    "router",
+    "psr7"
+  ],
+  "homepage": "http://github.com/slimphp/Slim-Skeleton",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Josh Lockhart",
+      "email": "info@joshlockhart.com",
+      "homepage": "http://www.joshlockhart.com/"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "ext-json": "*",
+    "defuse/php-encryption": "^2.2",
+    "firebase/php-jwt": "^5.0",
+    "guzzlehttp/guzzle": "~6.0",
+    "izniburak/pdox": "^1.4",
+    "pear/xml_serializer": "^0.22.0",
+    "servo/fluidxml": "^1.21",
+    "slim/slim": "^3.1",
+    "vlucas/valitron": "^1.4"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "classmap": [
+      "core/rules",
+      "core/controllers",
+      "core/models",
+      "core/libraries",
+      "apps/models",
+      "apps/controllers",
+      "apps/middleware",
+      "apps/libraries",
+      "apps/utils"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "process-timeout": 0,
+    "sort-packages": true
+  }
+}
